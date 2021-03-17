@@ -4,7 +4,7 @@ const ContactPage = () => {
   return(
     <div>
       <h1>Contact</h1>
-      <p>Mail me to : Dindinmilou@gmail.com</p>
+      <p>Stay in touch with me via Twitter : <a href="https://twitter.com/din__dong" target="_blank">@din__dong</a></p>
     </div>
   )
 }
