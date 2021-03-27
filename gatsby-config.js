@@ -11,6 +11,13 @@ module.exports = {
     author: 'Din dong'
   },
   plugins: [
-    'gatsby-plugin-sass'
+    'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'source',
+        path: `${__dirname}/src/`
+      }
+    }
   ],
 }
