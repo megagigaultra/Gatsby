@@ -18,6 +18,7 @@ module.exports = {
         name: 'source',
         path: `${__dirname}/src/`
       }
-    }
+    },
+    'gatsby-transformer-remark'
   ],
 }
