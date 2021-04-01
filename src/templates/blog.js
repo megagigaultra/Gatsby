@@ -4,6 +4,7 @@ import { BLOCKS, MARKS } from "@contentful/rich-text-types"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 
 import Layout from '../components/layout'
+import Head from '../components/head'
 
 export const query = graphql`
     query($slug: String){
@@ -55,6 +56,7 @@ const Blog = ({ data: { blog }}) => {
 
     return (
         <Layout>
+            <Head title={blog.title} />
             <h1>{blog.title}</h1>
             <p>{blog.publishedDate}</p>
             {renderRichText(blog.body, options)}
